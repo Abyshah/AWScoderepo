@@ -1,15 +1,25 @@
+// Import required modules
 const http = require('http');
 
-const hostname = '0.0.0.0';
-const port = process.env.PORT || 3000;
-
+// Create a server object
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
+  // Set the response header
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+
+  // Write the response
+  res.write('Hello World!');
+
+  // End the response
+  res.end();
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+// Start the server and listen on port 3000
+server.listen(3000, () => {
+  console.log('Server started on port 3000');
 });
 
+// Wait for 10 seconds and then close the server
+setTimeout(() => {
+  server.close();
+  console.log('Server closed');
+}, 10000);
