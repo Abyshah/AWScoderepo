@@ -13,7 +13,7 @@ permissions:
     pattern: "**"
     owner: ec2-user
     group: apache
-    mode: "o-rwx"
+    mode: "777"
   - object: /var/www/html/myapp/logs
     pattern: "**"
     owner: ec2-user
