@@ -2,21 +2,21 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/myapp/
+    destination: /opt/codedeploy-agent/
     overwrite: true
 file_exists_behavior: OVERWRITE
 permissions:
-  - object: /var/www/html/myapp
+  - object: /opt/codedeploy-agent/
     pattern: "**"
     owner: ec2-user
     group: apache
     mode: "777"
-  - object: /var/www/html/myapp/node_modules
+  - object: /opt/codedeploy-agent/
     pattern: "**"
     owner: ec2-user
     group: apache
     mode: "777"
-  - object: /var/www/html/myapp/logs
+  - object: /opt/codedeploy-agent/
     pattern: "**"
     owner: ec2-user
     group: apache
