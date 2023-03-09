@@ -11,16 +11,6 @@ permissions:
     owner: ec2-user
     group: apache
     mode: "777"
-  - object: /opt/codedeploy-agent/
-    pattern: "**"
-    owner: ec2-user
-    group: apache
-    mode: "777"
-  - object: /opt/codedeploy-agent/
-    pattern: "**"
-    owner: ec2-user
-    group: apache
-    mode: "777"
 hooks:
   BeforeInstall:
     - location: install_dependencies.sh
