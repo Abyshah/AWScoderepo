@@ -1,6 +1,6 @@
 npm run build > /dev/null 2>&1
 
-cat << EOF >> /etc/systemd/system/myserver.service
+cat << EOF > /etc/systemd/system/myserver.service
 Description=index.js 
 Documentation=https://example.com
 After=network.target
