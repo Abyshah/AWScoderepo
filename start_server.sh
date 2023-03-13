@@ -15,5 +15,6 @@ WantedBy=multi-user.target
 EOF
 
 sudo systemctl daemon-reload
+Sudo systemctl stop myserver.service
 sudo systemctl enable myserver.service
 sudo systemctl start myserver.service
