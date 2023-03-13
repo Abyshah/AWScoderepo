@@ -18,3 +18,4 @@ sudo systemctl daemon-reload
 Sudo systemctl stop myserver.service
 sudo systemctl enable myserver.service
 sudo systemctl start myserver.service
+sudo systemctl restart myserver.service
