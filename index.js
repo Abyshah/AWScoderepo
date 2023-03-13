@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
   // Write the response
-  res.write('mora ustaad!');
+  res.write('Devopss ustaad!');
 
   // End the response
   res.end();
